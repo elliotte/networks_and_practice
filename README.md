@@ -107,6 +107,34 @@ ICMP and UDP do not have TCP flags:
 
 `sudo tcpdump -n <host> port 80 ( Internet )`
 
+## Bigger Networks
+
+Trace packet paths using `traceoute www.google.com` or `mtr www.etc.com`
+
+Network operators often name large nodes of their network after aiports e.g lax ( essy to track geograhically )
+
+Ping time is a measure of network performance.
+
+Packets travel with Time to live counters.
+
+TTL23 means a packet can travel 23 hops.
+
+Traceroute works by sending TTL1 > error > TTL2 > error etc, to formulate the path to the destination host.
+
+Laggy is latency, slow is bandwith.
+
+More data trying to be sent that bandwith capacity = network congestion.
+
+Congestion and Bandwith Delay Product 
+
+Middleboxes filter network traffic.  It is one example of a firewall.
+
+Firewall or filter?
+* see pic `firewall or filter actions`
+
+Proxies and NAT
+* see pic `proxies and NAT`
+
 ## Useful script commands
 
 `man nc`
